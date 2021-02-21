@@ -1,0 +1,34 @@
+/**
+Main Axis
+    Es el eje principal del contenedor Flex,  
+    es en el cual los ítems serán colocados según dirección establecida.
+
+    Este eje tiene main-start y main-end,  
+    el primero es donde se van a empezar a colocar los ítems 
+    y el segundo es donde van a terminar de colocarse los item.
+
+    El main-size  es el ancho o alto de un ítem  según cuál sea el main-axis,   
+    si el main-axis es el horizontal la medida principal es el width, 
+    en caso contrario sería el hight.
+
+Coss Axis
+
+    Este es el eje secundario de un contenedor Flex,   
+    la posición de este eje va a depender de la posición del eje principal, 
+    si este es horizontal entonces el secundario va a ser vertical o viceversa. 
+
+    Este también tiene un inicio y un final, 
+    dónde las Flex-lines serán puestas de inicio a fin en este eje.
+    **La FlexLines es la linea donde serán puestos los items, 
+    si algunos elementos no caben (y asi se configura), 
+    se puede hacer que salten a una linea inferior nueva. (flex-wrap:wrap)
+
+    Y de la misma manera también hay un  tamaño secundario, el Cuál será el width o el High del ítem  dependiendo de cuál sea el eje secundario
+
+
+
+    teniendo bien esto en mente podremos saber cuál será el comportamiento de la configuración que le hagamos a un contenedor Flex, 
+
+
+
+*/

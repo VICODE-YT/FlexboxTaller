@@ -1,0 +1,72 @@
+/*
+  Flexibility:
+    **Aplica a flex-items y su main-size 
+
+  flex-grow: number
+    Especifica el factor de crecimiento del 'flex-item', 
+    cuando el 'espacio positivo' disponible es distribuido
+    **Si se omite, su valor será 1.
+
+  flex-shrink: number
+    Factor de encojimiento para el espacio negativo sobrante 
+    (cuando los elementos no caben, hay un espacio sobrante negativo o espacio faltante)
+    **Si se omite, su valor será 1.
+
+  flex-basis: number | content | auto ( regresa main-size-property)
+    Tamaño del elemento antes de que el espacio sobrante 
+    (positivo o negativo) sea distribuido.
+
+    SHORTHAND
+
+    flex: none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’> ]
+    Initial:	0 1 auto
+  
+*/
+
+.flex-container {
+  background-color: crimson;
+ /*  height: 100px; */
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.item {
+  background-color: coral;
+  margin: 5px;
+  width: 80px;
+  height: 45px;
+ 
+  flex: 1 1 auto;
+
+}
+/* 
+140 available
+ */
+.A{
+  /* flex-grow: 2; */
+  /* 182 */
+/*    flex-shrink: 0;
+  flex-basis:100px; */
+}
+
+.B{
+  /* flex-grow: 1; */
+  /* 136.2 */
+/*    flex-shrink: 1;
+   flex-basis:75px; */
+
+}
+
+.C{
+  /* flex-grow: 3; */
+/*    flex-shrink: 2;
+   flex-basis:50px; */
+  }
+
+.D{
+  /* flex-grow: 1; */
+  /*  flex-shrink: 0;
+   flex-basis:100px;
+ */
+} 

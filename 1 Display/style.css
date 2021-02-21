@@ -1,0 +1,36 @@
+
+/*
+https://www.w3.org/TR/css-flexbox-1/#propdef-align-self
+
+    Flex Containers:
+    **Aplica a flex-conatiners
+
+    display: flex | inline-flex
+
+    Parecido a
+    display: block | inline-block
+
+    block -> fuerza un salto de linea al final del elemento en bloque
+    inline-block -> no fuerza ese salto y permite ajuste height-width.
+
+*/
+.flex-container {
+  background-color: rgb(37, 220, 20);
+
+  height: 100px;
+  width: 100px;
+  /* display: block;
+  display: inline-block;
+  display: flex; */
+  display: inline-flex;
+
+}
+.item {
+  background-color: coral;
+  margin: 10px;
+  height: 25px;
+  width: 25px;
+}
+.block {
+  /* display: inline; */
+}

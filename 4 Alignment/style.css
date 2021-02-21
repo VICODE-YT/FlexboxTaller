@@ -1,0 +1,63 @@
+/*
+    Alignment:
+    **Aplica a flex-containers
+
+    Main-axis alignment
+      justify-content: flex-start | flex-end | center | space-between | space-around
+      Initial:	flex-start
+
+      **Alinnea flex-items a lo largo del main-axis, el alineamiento se realiza despues
+      de que la flexibilidad (grow, shrink, basis) y auto margin hallan sido resuelto o aplicados,
+    
+    
+    Cross-axis alignment
+      align-items: flex-start | flex-end | center | baseline | stretch
+      Initial:	stretch
+      
+      **Alinnea flex-items (incluyendo items anonimos) a lo largo del cross-axis.
+
+      align-self: auto | flex-start | flex-end | center | baseline | stretch
+      ** Aplica a Flex-item
+      **Sobreescribe el valor individual dado a un flex-item a traves del align-items
+    
+    Alinear el contenido   
+      align-content: flex-start | flex-end | center | space-between | space-around | stretch
+      Initial:	stretch
+
+      Alinea el contenido de las flex lines cuando hay espacio extra en el cross-axis
+      y no tiene efecto cuando el contenedor es single-line o "flex-wrap: nowrap"
+
+*/
+.flex-container {
+  background-color: crimson;
+  /*  height: 100px; */
+  height: 300px;
+
+  /* width: 100px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: row nowrap; */
+  justify-content: space-evenly;
+  align-items: flex-end;
+
+  align-content: stretch;
+}
+.item {
+  background-color: coral;
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+}
+
+.A {
+  /* align-self: stretch; */
+  height: 120px;
+}
+
+/*
+.B{
+  align-self: center;
+}
+
+ */

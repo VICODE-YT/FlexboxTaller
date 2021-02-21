@@ -1,0 +1,39 @@
+
+/*
+    Flex flow:
+    **Aplica a flex-containers
+
+    flex-direction: row | row-reverse | column | column-reverse
+      Seteará cual será el main axis y su direction (implicatmente definirá cual es el  cross axis)
+      **Overflow en main axis end
+
+    flex-wrap: nowrap | wrap | wrap-reverse
+      Determina la dirección del cross-axis y si este será uni-linea o multilinea
+      **Multilne será en el cross-axis 
+      **nowrap -> single flex-line, todos los elementos a una linea, aunque haga oveflow (hay overflow, cuando no hay espacio suficiente).
+      **wrap   -> multi flex-line,  si X elementos harian overflow, entonces se creará otra 
+      flex-line, donde serán puestos
+
+
+    SHORTHAND
+
+    flex-flow: 	<‘flex-direction’> || <‘flex-wrap’>
+
+    
+*/
+.flex-container {
+  background-color: crimson;
+  /* height: 100px; */
+  /* width: 100px; */
+  display: flex;
+/*   flex-direction: row-reverse;
+  flex-wrap: wrap-reverse; */
+  flex-flow: row-reverse wrap-reverse
+}
+.item {
+  background-color: coral;
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+
+}
